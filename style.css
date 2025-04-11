@@ -1,0 +1,474 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+a.skip-link{
+    position: absolute;
+    top: -40px;
+    left: 0;    
+    background: #333;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s ease; /* Added smooth transition for top property */
+}
+a.skip-link:focus {
+    top: 0;
+    outline: 2px solid #fff; /* Added outline for better focus visibility */
+}
+.skip-to-main:active {
+    top: 0; /* Keep it visible when active */
+}
+ul.libraries{
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: center; /* Center-align items vertically */
+    gap: 20px; /* Add spacing between items */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Center the entire list horizontally */
+    width: fit-content; /* Shrink the width to fit the content */
+}
+ul.visualization-tools{
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: center; /* Center-align items vertically */
+    gap: 20px; /* Add spacing between items */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Center the entire list horizontally */
+    width: fit-content; /* Shrink the width to fit the content */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-color: #f4f4f4;
+    border: 2px solid #f4f4f4;
+}
+/*---------------------*/
+.hamburger {
+    display: flex; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.hamburger .bar{
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white; /* Adjust color as needed */
+    border-radius: 2px;
+}
+.nav_links.active {
+    display: flex; /* Show navigation links */
+}
+/*-----------------------*/
+.nav_links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    gap: 10px;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav ul a {
+    color: white;
+}
+nav ul a.info{
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+nav ul a.project1{
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+nav ul a.project2{
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+nav ul a.contact{
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+nav ul a.skillset{
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+a{
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+h1{
+    size: 30px;
+    text-decoration: underline;
+}
+h2{
+    size: 20px;
+}
+h3{
+    size: 15px;
+
+}
+h1, h2, h3 {
+    color: white;
+}
+
+li{
+    list-style-type: none;
+    color: white;
+}
+section{
+    padding: 20px;
+    background-color: #333;
+    border: 2px solid white; /* Add a solid black border */
+    border-radius: 10px;
+    margin:20px;
+}
+label{
+    color: white;
+}
+p{
+    color: white;
+    padding: 20px;
+}
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery img {
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+figcaption{
+    text-align: center;
+    color: white;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+section.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .hamburger {
+        display: flex; /* Show the hamburger menu on smaller screens */
+    }
+
+    .nav_links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: row;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_links.active {
+        display: flex; /* Show navigation links when active */
+    }
+    
+    body {
+        font-size: 18px; /* Slightly larger font size for readability */
+        line-height: 1.6; /* Improve text spacing */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Main layout as a grid */
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        gap: 20px; /* Add spacing between grid items */
+        max-width: 1200px;
+        margin: 0 auto; /* Center the grid */
+        padding: 20px;
+    }
+
+    /* Header container adjustments */
+    .container {
+        display: flex;
+        flex-direction: row; /* Align header content horizontally */
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    /* Skills section adjustments */
+
+    section.skills {
+        grid-column: 1 / -1; /* Span across all columns */
+        width: 100%; /* Ensure it spans the full width */
+        max-width: none; /* Remove any maximum width restrictions */
+        margin: 0 auto; /* Center the section horizontally */
+        padding: 20px; /* Add padding for spacing */
+        background-color: #333; /* Match the background color of other sections */
+        border: 2px solid white; /* Add a border for consistency */
+        border-radius: 10px; /* Add rounded corners */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        text-align: center; /* Center-align text */
+    }
+    section.myprojects {
+        grid-column: 1 / -1; /* Span across all columns */
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        margin: 20px auto; /* Add spacing and center the section */
+        padding: 20px;
+        background-color: #333; /* Match the background color of other sections */
+        border: 2px solid white; /* Add a border for consistency */
+        border-radius: 10px; /* Add rounded corners */
+        width: 100%; /* Ensure it spans the full width */
+        max-width: 1200px; /* Prevent the section from becoming too wide */
+    }
+
+    /* Programming Languages and Libraries sections */
+    section.skills ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid for items */
+        gap: 20px; /* Add spacing between items */
+        list-style: none; /* Remove bullet points */
+        padding: 0;
+    }
+
+    section.skills ul li {
+        text-align: center; /* Center-align text */
+        font-weight: bold; /* Make text bold */
+    }
+
+    section.skills ul img {
+        width: 100px; /* Set a consistent size for logos */
+        height: auto;
+        margin: 0 auto; /* Center the images */
+        display: block;
+    }
+
+    /* Visualization Tools section */
+    section.skills ul img.logo {
+        width: 80px; /* Slightly smaller logos for visualization tools */
+    }
+
+    /* Work Experience section */
+    section.skills img.logo {
+        width: 150px; /* Larger logos for work experience */
+        margin: 10px auto; /* Center-align logos */
+        display: block;
+    }
+    nav ul a{
+        font-size:medium;
+    }
+
+    /* Section layout adjustments */
+    section {
+        display: grid;
+        gap: 20px; /* Add spacing between columns */
+        padding: 40px; /* Add more padding for larger screens */
+        margin: 20px auto;
+        width: 90%; /* Limit the section width */
+        max-width: 1200px; /* Prevent sections from becoming too wide */
+    }
+    .project .gallery {
+        display: flex;
+        flex-wrap: wrap; /* Allow images to wrap to the next row if needed */
+        justify-content: center; /* Center-align images */
+        gap: 20px; /* Add spacing between images */
+        margin: 0 auto; /* Center the gallery on the page */
+        width: 100%; /* Make the gallery span the full width of the page */
+    }
+    ul.libraries{
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center-align items horizontally */
+        align-items: center; /* Center-align items vertically */
+        gap: 20px; /* Add spacing between items */
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0 auto; /* Center the entire list horizontally */
+        width: fit-content; /* Shrink the width to fit the content */
+    }
+    ul.visualization-tools{
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center-align items horizontally */
+        align-items: center; /* Center-align items vertically */
+        gap: 20px; /* Add spacing between items */
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0 auto; /* Center the entire list horizontally */
+        width: fit-content; /* Shrink the width to fit the content */
+    }
+    
+    /* Make the images span the full width of the page */
+    section.project {
+        grid-column: span 2; /* Make the section span two columns */
+        width: 100%; /* Ensure it spans the full width */
+        max-width: 1200px; /* Optional: Limit the maximum width */
+        margin: 20px auto; /* Center the section */
+    }
+    
+
+    .gallery img {
+        width: 100%; /* Make images responsive within their grid cells */
+        border: 5px solid #50C7C7; /* Add a consistent border */
+        border-radius: 10px; /* Add rounded corners */
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 16px; /* Slightly larger font size for readability */
+        padding: 20px; /* Add padding for spacing */
+        text-align: center; /* Center footer text */
+    }
+
+    /* Chart section adjustments */
+    section.myprojects canvas#myChart {
+        max-width: 400px;
+        margin: 0 auto; /* Center the chart */
+        display: block;
+    }
+}
+@media (min-width: 1024px){
+    section.skills ul {
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid for items */
+        gap: 20px; /* Add spacing between items */
+        list-style: none; /* Remove bullet points */
+        padding: 0;
+    }
+    h1{
+        font-size: xx-large;
+    }
+    img.isaac{
+        width: 150px; /* Larger logos for work experience */
+        margin: 10px auto; /* Center-align logos */
+        align-self:baseline;
+    }
+    ul.libraries {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center-align items horizontally */
+        align-items: center; /* Center-align items vertically */
+        gap: 20px; /* Add spacing between items */
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0 auto; /* Center the entire list horizontally */
+        width: fit-content; /* Shrink the width to fit the content */
+    }
+    ul.visualization-tools{
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center-align items horizontally */
+        align-items: center; /* Center-align items vertically */
+        gap: 20px; /* Add spacing between items */
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0 auto; /* Center the entire list horizontally */
+        width: fit-content;
+    }
+    section.work {
+        display: flex; /* Make the section a flex container */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    .nav_links.active {
+        display: flex; /* Show navigation links when active */
+    }
+    .nav_links li {
+        margin: 0 10px; /* Add spacing between links */
+    }
+    main#contact-main{
+        display: unset;
+    }
+}
+@media (min-width: 1440px){
+    .hamburger {
+        position: absolute; /* Ensure the hamburger is positioned relative to its container */
+        right: 20px;
+    }
+    html, body {
+        height: 100%; 
+        margin: 0; 
+        display: flex; 
+        flex-direction: column; 
+    }
+    main#contact-main{
+        flex: 1;
+    }
+    section.contact{
+        width:100%;
+    }
+    section.form{
+        width:100%;
+    }
+    footer.contact_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Add spacing between items */
+        width: 100%; /* Ensure the footer spans the full width */
+        background-color: #333; /* Match the background color */
+        color: white; /* Ensure text is visible */
+        padding: 20px; /* Add padding for spacing */
+        position: relative; /* Ensure it stays at the bottom */
+    }
+
+
+}
+

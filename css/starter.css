@@ -1,0 +1,30 @@
+@media (max-width: 320px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .nav_links li {
+        margin: 5px 0;
+    }
+
+    .logo {
+        width: 50px; /* Adjust logo size */
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust font size */
+    }
+}
