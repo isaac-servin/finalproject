@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="images/logo_icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_img.png">
+    <link rel="stylesheet" type="text/css" href="html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - My Digital Portfolio</title>
+</head>
+<a href="#project1" class="skip-link">Skip to Main Content</a>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/favicon_img.png" alt="Logo" class="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="about.html#about">About</a></li>
+                    <li><a href="project1.html" class="project1">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="project1">
+        <section>
+            <h1>Project 1: Unionized & Nonunionized Worker Wage Data Analysis Project</h1>
+            <p>Description of Project 1. This project was built using python and python based libraries. It observes wage differences between unionized and non-unionized workers in the state of Michigan in the manufacturing industry, and aims to see if there is a correlation between union membership in the manufacturing industry in the state of Michigan and wage differences. This project utlizes visualizations shown below.</p>
+            <h2>Libraries Used</h2>
+            <ul>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>Numpy</li>
+                <li>Scipy</li>
+                <li>sklearn</li>
+            <h2>Statistical Methods Used</h2>
+            <ul>
+                <li>bivariate t-test</li>
+                <li>Linear Regression</li>
+                <!-- Add more technologies as needed -->
+            </ul>
+            </section>
+            <section>
+            <h1>Challenges and Solutions</h1>
+            <p>During the development of this project, I faced several challenges such as cleaning the data, understanding the dataset documentation, and drawing the appropriate conclusions based off of my statistical results. To overcome these challenges, I made extra efforts to understand the data, re-labeled the variables for better readabilty, and preformed extensive ressearch on Matplotlib documentation so I could make the appropriate graphs.</p>
+            </section>
+            <section class="project">
+            <h1>Project Screenshots</h1>
+            <div class="gallery">
+                <img src="images/Screenshot 2025-03-16 at 8.00.35 PM.png" alt="Line graph showing the percentage increase in union membership by year relative to union wage"><figcaption>Line graph showing the percentage increase in union membership by year relative to union wage</figcaption>
+                <img src="images/Screenshot 2025-03-16 at 8.01.15 PM.png" alt="Line graph showing percentage in wage differences by year"><figcaption>Line graph showing percentage in wage differences by year</figcaption>
+                <img src="images/Screenshot 2025-03-16 at 8.01.54 PM.png" alt="Average Unionized vs Nonunionized wage differences by year line graph"><figcaption>Average Unionized vs Nonunionized wage differences by year line graph</figcaption>
+                <!-- Add more screenshots as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025, Isaac A. Servin</p>
+        <p><a href="images/SI Resume (1).pdf" target="_blank">View Resume</a></p>
+    </footer>
+    <script src = "js/zoom.js"></script>
+    <script src="js/hamburger.js"></script>
+    <!--<script> window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) { 
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script> -->
+</body>
+</html>

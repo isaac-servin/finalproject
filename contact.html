@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="images/logo_icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_img.png">
+    <link rel="stylesheet" type="text/css" href="html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+<a href="#contact-main" class="skip-link">Skip to Main Content</a>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/favicon_img.png" alt="Logo" class="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="about.html#about">About</a></li>
+                    <li><a href="project1.html">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                    <li><a href="contact.html" class="contact">Contact</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+<main id="contact-main">
+    <section class="contact">
+        <h1>Contact</h1>
+        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+        <ul>
+            <li>Email: <a href="mailto:isaacser@umich.edu">isaacser@umich.edu</a></li>
+            <li>Cell: 248-504-7719</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/isaac-servin" target="_blank">My LinkedIn profile</a></li>
+        </section>
+        <section class="form">
+            <h1>Send me a message on Formspree!</h1>
+            <form action="https://formspree.io/f/xanebpjw" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        </main>
+    <footer class="contact_footer">
+        <p>2025, Isaac A. Servin</p>
+        <p><a href="images/SI Resume (1).pdf" target="_blank">View Resume</a></p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>
