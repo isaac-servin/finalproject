@@ -385,7 +385,6 @@ section.skills{
 }
 @media (min-width: 1024px){
     section.skills ul {
-        display: flex;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid for items */
         gap: 20px; /* Add spacing between items */
         list-style: none; /* Remove bullet points */
@@ -455,6 +454,16 @@ section.skills{
     }
     section.form{
         width:100%;
+    }
+    ul.libraries{
+        display: flex;
+        justify-content: space-between; /* Center-align items horizontally */
+        align-items: center; /* Center-align items vertically */
+        gap: 20px; /* Add spacing between items */
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0 auto; /* Center the entire list horizontally */
+        width: fit-content; /* Shrink the width to fit the content */
     }
     footer.contact_footer {
         display: flex;
