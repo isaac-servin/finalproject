@@ -28,7 +28,19 @@ a.skip-link:focus {
 .skip-to-main:active {
     top: 0; /* Keep it visible when active */
 }
+ul.programming{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: center; /* Center-align items vertically */
+    gap: 20px; /* Add spacing between items */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Center the entire list horizontally */
+    width: fit-content; /* Shrink the width to fit the content */
+}
 ul.libraries{
+    display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: center; /* Center-align items horizontally */
     align-items: center; /* Center-align items vertically */
