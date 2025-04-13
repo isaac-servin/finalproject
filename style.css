@@ -400,8 +400,8 @@ section.skills{
         align-self:baseline;
     }
     ul.libraries {
-        flex-wrap: wrap; /* Allow items to wrap to the next line */
-        justify-content: center; /* Center-align items horizontally */
+        display: flex;
+        justify-content: flex-end; /* Center-align items horizontally */
         align-items: center; /* Center-align items vertically */
         gap: 20px; /* Add spacing between items */
         list-style: none; /* Remove bullet points */
