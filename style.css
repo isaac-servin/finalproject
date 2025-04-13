@@ -28,19 +28,7 @@ a.skip-link:focus {
 .skip-to-main:active {
     top: 0; /* Keep it visible when active */
 }
-ul.programming{
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Center-align items horizontally */
-    align-items: center; /* Center-align items vertically */
-    gap: 20px; /* Add spacing between items */
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0 auto; /* Center the entire list horizontally */
-    width: fit-content; /* Shrink the width to fit the content */
-}
 ul.libraries{
-    display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: center; /* Center-align items horizontally */
     align-items: center; /* Center-align items vertically */
@@ -206,10 +194,44 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-section.skills{
+section.skills {
+    width: 100%; /* Ensure it spans the full width */
+    max-width: none; /* Remove any maximum width restrictions */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #333; /* Match the background color of other sections */
+    border: 2px solid white; /* Add a border for consistency */
+    border-radius: 10px; /* Add rounded corners */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center-align text */
+}
+.programming-languages{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: center; /* Center-align items vertically */
+    gap: 20px; /* Add spacing between items */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Center the entire list horizontally */
+    width: fit-content; /* Shrink the width to fit the content */
+}
+ul.programming-languages li {
+    display: flex;
+    flex-direction: column; /* Stack text above the image */
+    align-items: center; /* Center-align text and image */
+    text-align: center; /* Center-align text */
+    gap: 10px; /* Add spacing between text and image */
+}
+ul.libraries li, ul.visualization-tools li {
+    display: flex;
+    flex-direction: column; /* Stack text above the image */
+    align-items: center; /* Center-align text and image */
+    text-align: center; /* Center-align text */
+    gap: 10px; /* Add spacing between text and image */
 }
 @media (min-width: 768px) {
     .hamburger {
@@ -411,8 +433,8 @@ section.skills{
         align-self:baseline;
     }
     ul.libraries {
-        display: flex;
-        justify-content: flex-end; /* Center-align items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center-align items horizontally */
         align-items: center; /* Center-align items vertically */
         gap: 20px; /* Add spacing between items */
         list-style: none; /* Remove bullet points */
@@ -446,6 +468,17 @@ section.skills{
     main#contact-main{
         display: unset;
     }
+
+    section.skills ul.programming-languages img {
+        width: 80px; /* Adjust image size for better alignment */
+        height: auto;
+        margin: 0 auto; /* Center the images */
+        display: block;
+    }
+
+    section.skills ul.programming-languages li {
+        gap: 15px; /* Add spacing between text and image */
+    }
 }
 @media (min-width: 1440px){
     .hamburger {
@@ -467,16 +500,6 @@ section.skills{
     section.form{
         width:100%;
     }
-    ul.libraries{
-        display: flex;
-        justify-content: space-between; /* Center-align items horizontally */
-        align-items: center; /* Center-align items vertically */
-        gap: 20px; /* Add spacing between items */
-        list-style: none; /* Remove bullet points */
-        padding: 0; /* Remove padding */
-        margin: 0 auto; /* Center the entire list horizontally */
-        width: fit-content; /* Shrink the width to fit the content */
-    }
     footer.contact_footer {
         display: flex;
         flex-direction: column;
@@ -490,6 +513,13 @@ section.skills{
         position: relative; /* Ensure it stays at the bottom */
     }
 
+    section.skills ul.programming-languages img {
+        width: 100px; /* Slightly larger images for higher resolution */
+        height: auto;
+        margin: 0 auto; /* Center the images */
+        display: block;
+    }
 
-}
-
+    section.skills ul.programming-languages li {
+        gap: 20px; /* Add more spacing between text and image */
+    }
